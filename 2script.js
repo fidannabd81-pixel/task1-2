@@ -1,17 +1,8 @@
-let fesil = prompt("Fəsil daxil et");
-switch(fesil){
-  case "yay":
-    alert("İyun, İyul, Avqust");
-    break;
-  case "qiş":
-    alert("Dekabr, Yanvar, Fevral");
-    break;
-  case "yaz":
-    alert("Mart, Aprel, May");
-    break;
-  case "payiz":
-    alert("Sentyabr, Oktyabr, Noyabr");
-    break;
-  default:
-    alert("Belə fəsil yoxdur");
+let cumle = "Bu gun hava cox gozeldir";
+let soz = "";
+for(let i = 0; i < cumle.length; i++){
+   if(cumle[i] !== " "){
+      soz = soz + cumle[i];
+   }
 }
+console.log(soz);

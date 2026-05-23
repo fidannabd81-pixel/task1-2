@@ -1,3 +1,11 @@
-let price = 120;
-let netice = price >= 100 ? price - 24 : price;
-alert(netice);
+let eded = 17;
+let sade = true;
+for(let i = 2; i < eded; i++){
+    if(eded % i == 0){
+        sade = false;
+    }
+}if(sade){
+    console.log("Sade ededdir");
+}else{
+    console.log("Sade eded deyil");
+}
