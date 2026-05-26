@@ -1,7 +1,9 @@
-let soz = "Proqramlasdirma";
-let say = 0;
-for (let i = 0; i < soz.length; i++) {
-    if (soz[i] === "r") {
-        say++;
+function tersEded(eded) {
+    let ters = 0;
+    while (eded > 0) {
+        let reqem = eded % 10;  
+        ters = ters * 10 + reqem; 
+        eded = Math.floor(eded / 10); 
     }
-}console.log(say);
+    return ters;}
+console.log(tersEded());

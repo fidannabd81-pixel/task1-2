@@ -1,8 +1,10 @@
-let cumle = "Bu gun hava cox gozeldir";
-let soz = "";
-for(let i = 0; i < cumle.length; i++){
-   if(cumle[i] !== " "){
-      soz = soz + cumle[i];
-   }
+function reqemSayi(eded) {
+    let say = 0;
+
+    while (eded > 0) {
+        eded = Math.floor(eded / 10); 
+        say++;
+    }
+    return say;
 }
-console.log(soz);
+console.log(reqemSayi());

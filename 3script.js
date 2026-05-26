@@ -1,11 +1,10 @@
-let eded = 17;
-let sade = true;
-for(let i = 2; i < eded; i++){
-    if(eded % i == 0){
-        sade = false;
+function cutEdedlerinCemi(eded) {
+    let cem = 0;
+    for (let i = 1; i <= eded; i++) {
+        if (i % 2 == 0) {
+            cem += i;
+        }
     }
-}if(sade){
-    console.log("Sade ededdir");
-}else{
-    console.log("Sade eded deyil");
+    return cem;
 }
+console.log(cutEdedlerinCemi());
