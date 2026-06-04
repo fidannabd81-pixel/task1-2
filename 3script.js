@@ -1,10 +1,12 @@
-function cutEdedlerinCemi(eded) {
-    let cem = 0;
-    for (let i = 1; i <= eded; i++) {
-        if (i % 2 == 0) {
-            cem += i;
-        }
+function endirimHesabla(mebleg) {
+    if (mebleg >= 200) {
+        return mebleg * 0.8;
+    } else if (mebleg >= 100) {
+        return mebleg * 0.9; 
+    } else {
+        return mebleg;
     }
-    return cem;
 }
-console.log(cutEdedlerinCemi());
+console.log(endirimHesabla(250)); 
+console.log(endirimHesabla(150));
+console.log(endirimHesabla(80)); 

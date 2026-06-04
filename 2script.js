@@ -1,10 +1,5 @@
-function reqemSayi(eded) {
-    let say = 0;
-
-    while (eded > 0) {
-        eded = Math.floor(eded / 10); 
-        say++;
-    }
-    return say;
+function netMaas(maas) {
+    let vergi = maas * 0.13;
+    return maas - vergi;
 }
-console.log(reqemSayi());
+console.log(netMaas(1000));
